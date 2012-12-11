@@ -1,9 +1,14 @@
 SmartDuplicate
 ======================
 
-SmartDuplicate is a Sublime Text 2 plugin that allows duplicating lines and chaning certain keywords.
+SmartDuplicate is a Sublime Text 2 plugin that allows duplicating lines while changing certain keywords.
 
+Shortcut
+--------
 
+**[CTRL+d]** duplicates line using smart duplicate
+
+_Note: I am aware I am overwriting a default keyboard shurtcut - but I found this very convinient and logical._
 
 Important
 ---------
