@@ -1,0 +1,5 @@
+]
+    {
+        "keys": ["ctrl+d"], "command": "smart_duplicate"
+    }
+]
