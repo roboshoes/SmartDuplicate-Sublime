@@ -4,6 +4,13 @@ SmartDuplicate
 SmartDuplicate is a Sublime Text 2 plugin that allows duplicating lines while changing certain keywords.
 
 
+Note
+----
+
+This is very early in development therefore there is a very limited amount of keywords. Also this is my first contact
+with Python. I am pretty sure I did not do it in the most efficient or _pythony_ way possible.
+
+
 Shortcut
 --------
 
@@ -12,18 +19,14 @@ Shortcut
 _Note: I am aware I am overwriting a default keyboard shurtcut - but I found this very convinient and logical._
 
 
-Important
----------
-
-This is very early in development therefore there is a very limited amount of keywords. Also this is my first contact
-with Python. I am pretty sure I did not do it in the most efficient or _pythony_ way possible.
-
-
 Supported keywords
 ------------------
 
-* width <=> height
-* x <=> y
+* .width <=> .height
+* .x <=> .y
+* .[word]X <=> .[word]Y  (any word ending in a capital X or Y)
+
+__Once again: work in progress. Constantly expanding and fine tuning the keywords__
 
 
 Motivation

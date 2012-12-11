@@ -23,6 +23,14 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
             elif ( match.group( 0 ) == ".x" ): return ".y"
             elif ( match.group( 0 ) == ".y" ): return ".x"
 
+        def partner( match ):
+            value = match.group( 0 )
+
+            if ( re.match( ".\w+X", value ) ): return value[ 0 : -1 ] + "Y"
+            if ( re.match( ".\w+Y", value ) ): return value[ 0 : -1 ] + "X"
+
+
         string = re.sub( "(.height|.width|.x|.y)", replace, string )
+        string = re.sub( "(.\w+X|.\w+Y)", partner, string )
 
         return string
