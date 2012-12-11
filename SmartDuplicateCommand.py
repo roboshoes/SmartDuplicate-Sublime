@@ -2,8 +2,6 @@ import sublime, sublime_plugin, re
 
 class SmartDuplicateCommand( sublime_plugin.TextCommand ):
 
-    test = "mathias.width"
-
     def run( self, edit ):
         for region in self.view.sel():
 
