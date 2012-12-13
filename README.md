@@ -22,7 +22,7 @@ _Note: I am aware I am overwriting a default keyboard shurtcut - but I found thi
 Supported keywords
 ------------------
 
-* .width <=> .height
+* width <=> height (case insensetive)
 * .x <=> .y
 * .[word]X <=> .[word]Y  (any word ending in a capital X or Y)
 
