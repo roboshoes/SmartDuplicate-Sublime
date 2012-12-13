@@ -36,9 +36,9 @@ element.y = other.height + 20 + element.height;
 Supported keywords
 ------------------
 
-* width <=> height (case insensitive)
-* .x <=> .y
-* .[word]X <=> .[word]Y  (any word ending in a capital X or Y)
+* `width` <-> `height` (case insensitive)
+* `.x` <-> `.y`
+* `.[word]X` <-> `.[word]Y`  (any word ending in a capital X or Y)
 
 __Once again: work in progress. Constantly expanding and fine tuning the keywords__
 
