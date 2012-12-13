@@ -1,5 +1,5 @@
 SmartDuplicate
-======================
+==============
 
 SmartDuplicate is a Sublime Text 2 plug-in that allows duplicating lines while changing certain keywords.
 
@@ -14,9 +14,23 @@ with Python. I am pretty sure I did not do it in the most efficient or _python-y
 Shortcut
 --------
 
-**[CTRL+shift+d]** duplicates line using smart duplicate
+**[CTRL+SHIFT+d]** duplicates line using smart duplicate
 
 _Note: This overwrites the default duplicate line shortcut._
+
+
+Examples
+--------
+
+I wrote the first line of the pairs and hit **[CTRL+SHIFT+d]**.
+
+```JavaScript
+Grid.WIDTH = window.innerWidth();
+Grid.HEIGHT = window.innerHeight();
+
+element.x = other.width + 20 + element.width;
+element.y = other.height + 20 + element.height;
+```
 
 
 Supported keywords
