@@ -17,20 +17,32 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
 
     def scan( self, string ):
 
-        def replace( match ):
-            if ( match.group( 0 ) == ".height" ): return ".width"
-            elif ( match.group( 0 ) == ".width" ): return ".height"
-            elif ( match.group( 0 ) == ".x" ): return ".y"
+        def hardReplace( match ):
+            if ( match.group( 0 ) == ".x" ): return ".y"
             elif ( match.group( 0 ) == ".y" ): return ".x"
 
-        def partner( match ):
+        def fillReplace( match ):
             value = match.group( 0 )
 
             if ( re.match( ".\w+X", value ) ): return value[ 0 : -1 ] + "Y"
             if ( re.match( ".\w+Y", value ) ): return value[ 0 : -1 ] + "X"
 
+        def softReplace( match ):
+            value = match.group( 0 )
 
-        string = re.sub( "(.height|.width|.x|.y)", replace, string )
-        string = re.sub( "(.\w+X|.\w+Y)", partner, string )
+            if ( value.istitle() ): transform = lambda string: string.title();
+            elif ( value.isupper() ): transform = lambda string: string.upper();
+            elif ( value.islower() ): transform = lambda string: string.lower();
+            else: transform = lambda string: string
+
+            value = value.lower();
+
+            if ( value == "height" ): return transform( "width" )
+            elif( value == "width" ): return transform( "height" )
+
+
+        string = re.sub( "(.x|.y)", hardReplace, string )
+        string = re.sub( r"(?i)(width|height)", softReplace, string )
+        string = re.sub( "(.\w+X|.\w+Y)", fillReplace, string )
 
         return string
