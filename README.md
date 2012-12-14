@@ -47,7 +47,7 @@ Motivation
 ----------
 
 I'm a front-end developer. It's been too many times that I duplicate a line and then go through and change all the
-`.height` to `.width`. In the manner of __automate all the things__ I thought I write a little plugin for the editor
+`.height` to `.width` etc.. In the manner of __automate all the things__ I thought I write a little plugin for the editor
 of my choice.
 
 Let me know what you think. No _you suck_-emails please.
