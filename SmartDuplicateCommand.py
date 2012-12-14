@@ -43,6 +43,6 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
 
         string = re.sub( "(\.x|\.y)", hardReplace, string )
         string = re.sub( r"(?i)(width|height)", softReplace, string )
-        string = re.sub( "(.\w+X|.\w+Y)", fillReplace, string )
+        string = re.sub( "(\.\w+X|\.\w+Y)", fillReplace, string )
 
         return string
