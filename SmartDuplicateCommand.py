@@ -24,8 +24,8 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
         def fillReplace( match ):
             value = match.group( 0 )
 
-            if ( re.match( ".\w+X", value ) ): return value[ 0 : -1 ] + "Y"
-            if ( re.match( ".\w+Y", value ) ): return value[ 0 : -1 ] + "X"
+            if ( re.match( "\w+X", value ) ): return value[ 0 : -1 ] + "Y"
+            if ( re.match( "\w+Y", value ) ): return value[ 0 : -1 ] + "X"
 
         def softReplace( match ):
             value = match.group( 0 )
@@ -43,6 +43,6 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
 
         string = re.sub( "(\.x|\.y)", hardReplace, string )
         string = re.sub( r"(?i)(width|height)", softReplace, string )
-        string = re.sub( "(\.\w+X|\.\w+Y)", fillReplace, string )
+        string = re.sub( "(\w+X|\w+Y)", fillReplace, string )
 
         return string

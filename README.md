@@ -30,6 +30,9 @@ Grid.HEIGHT = window.innerHeight();
 
 element.x = other.width + 20 + element.width;
 element.y = other.height + 20 + element.height;
+
+target.x = stage.mouseX;
+target.y = stage.mouseY;
 ```
 
 
