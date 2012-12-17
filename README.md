@@ -24,7 +24,7 @@ Examples
 
 I wrote the first line of the pairs and hit **[CTRL+SHIFT+d]**.
 
-```JavaScript
+```
 Grid.WIDTH = window.innerWidth();
 Grid.HEIGHT = window.innerHeight();
 
@@ -33,6 +33,12 @@ element.y = other.height + 20 + element.height;
 
 target.x = stage.mouseX;
 target.y = stage.mouseY;
+
+marginTop: "30px"
+marginBottom: "30px"
+
+padding-left: 20px;
+padding-right: 20px;
 ```
 
 
@@ -40,6 +46,8 @@ Supported keywords
 ------------------
 
 * `width` <-> `height` (case insensitive)
+* `left` <-> `right` (case insensitive)
+* `top` <-> `bottom` (case insensitive)
 * `.x` <-> `.y`
 * `.[word]X` <-> `.[word]Y`  (any word ending in a capital X or Y)
 

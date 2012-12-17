@@ -38,11 +38,14 @@ class SmartDuplicateCommand( sublime_plugin.TextCommand ):
             value = value.lower();
 
             if ( value == "height" ): return transform( "width" )
-            elif( value == "width" ): return transform( "height" )
-
+            elif ( value == "width" ): return transform( "height" )
+            elif ( value == "left" ): return transform( "right" )
+            elif ( value == "right" ): return transform( "left" )
+            elif ( value == "top" ): return transform( "bottom" )
+            elif ( value == "bottom" ): return transform( "top" )
 
         string = re.sub( "(\.x|\.y)", hardReplace, string )
-        string = re.sub( r"(?i)(width|height)", softReplace, string )
+        string = re.sub( r"(?i)(width|height|left|right|top|bottom)", softReplace, string )
         string = re.sub( "(\w+X|\w+Y)", fillReplace, string )
 
         return string
