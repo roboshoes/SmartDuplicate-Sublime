@@ -3,6 +3,14 @@ SmartDuplicate
 
 SmartDuplicate is a Sublime Text 2 plug-in that allows duplicating lines while changing certain keywords.
 
+Installation
+------------
+
+* Using [Package Controller](http://wbond.net/sublime_packages/package_control) (recommended):
+Call _Install Package_ and look for __SmartDuplicate__.
+
+* Manually:
+Clone repo into your packages folder (in Subime: _Preferences_ > _Browse Packages..._ menu item to open this folder).
 
 Note
 ----
