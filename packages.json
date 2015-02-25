@@ -1,0 +1,13 @@
+{
+    "schema_version": "1.3",
+    "packages": [
+        {
+            "name": "SmartDuplicate-Sublime",
+            "description": "Overwrites sublimes line duplication to replace width with height etc.",
+            "author": "Mathias Paumgarten",
+            "homepage": "https://github.com/MathiasPaumgarten/SmartDuplicate-Sublime",
+            "last_modified": "2014-02-25 10:01:00",
+            "platforms": {}
+        }
+    ]
+}

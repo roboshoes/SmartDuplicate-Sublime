@@ -1,7 +1,7 @@
 SmartDuplicate
 ==============
 
-SmartDuplicate is a Sublime Text 2 plug-in that allows duplicating lines while changing certain keywords.
+SmartDuplicate is a Sublime Text 2 and 3 plug-in that allows duplicating lines while changing certain keywords.
 
 Installation
 ------------
