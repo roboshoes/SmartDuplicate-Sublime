@@ -12,15 +12,9 @@ Call _Install Package_ and look for __SmartDuplicate__.
 * Manually:
 Clone repo into your packages folder (in Subime: _Preferences_ > _Browse Packages..._ menu item to open this folder).
 
-Note
-----
 
-This is very early in development therefore there is a very limited amount of keywords. Also this is my first contact
-with Python. I am pretty sure I did not do it in the most efficient or _python-y_ way possible.
-
-
-Shortcut
---------
+Command
+-------
 
 **[CTRL+SHIFT+d]** (or **[CMD+SHIFT+d]** for OSX) duplicates line using smart duplicate
 
