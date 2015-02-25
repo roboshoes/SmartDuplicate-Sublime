@@ -22,7 +22,7 @@ with Python. I am pretty sure I did not do it in the most efficient or _python-y
 Shortcut
 --------
 
-**[CTRL+SHIFT+d]** duplicates line using smart duplicate
+**[CTRL+SHIFT+d]** (or **[CMD+SHIFT+d]** for OSX) duplicates line using smart duplicate
 
 _Note: This overwrites the default duplicate line shortcut._
 
